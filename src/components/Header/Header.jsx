@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import styles from "./Header.module.css";
+import imgUrl from "../../assets/logo.svg"
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleHamburger = () => {
@@ -13,7 +14,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles["left-side"]}>
-          <div className={styles.logo}> Shortly</div>
+          <img src={imgUrl} /> 
           <ul className={styles.list}>
             <p className={styles["list-p"]}>Feature</p>
             <p className={styles["list-p"]}>Pricing</p>

@@ -2,12 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 3%;
+    padding: 2% 4%;
 
 }
-.logo{
-    font-size: 32px;
-}
+
 .list{
     display: flex;
     gap: 5%;
