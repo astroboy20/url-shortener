@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3%;
+
+}
+.logo{
+    font-size: 32px;
+}
+.list{
+    display: flex;
+    gap: 5%;
+}
+.list-p{
+    color:hsl(0, 0%, 75%) ;
+}
+.list-p:hover{
+    color: black ;
+    transition: all 1s ease;
+}
+
+.left-side,.right-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width:786px) {
+    .list,.right-side{
+        display: none;
+    }
+    .logo{
+        font-size: 16px;
+    }
+    .hamburger{
+        display: block;
+        font-size: 30px;
+        color:hsl(0, 0%, 75%);
+    }
+    .hamburgerList{
+        background-color:hsl(257, 27%, 26%) ;
+        color:#fff ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5%;
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        border-radius: 10px;
+    }
+ }
