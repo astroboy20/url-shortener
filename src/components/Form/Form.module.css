@@ -1,7 +1,67 @@
-.section{
-    background-color: hsl(0, 0%, 75%);
-    /* position: absolute; */
+.section {
+  background-color: hsl(270, 4%, 90%);
+  padding: 4%;
+  position: relative;
+  width: 100%;
+  margin-top: 4%;
 }
-.form{
-    /* position: relative; */
+
+.form {
+  position: absolute;
+  top: -50px;
+  width: 70%;
+  margin: 0 15% 0 10%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../../assets/bg-boost-desktop.svg") ;
+  border-radius: 10px;
+  /* overflow-y: auto;
+  max-height: 100%; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;  */
+}
+
+.form::-webkit-scrollbar {
+  /* display: none;  */
+}
+
+.input {
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 8px;
+  border: none;
+}
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    height: 100px;
+  }
+
+  .form {
+    top: -30px;
+    width: 90%;
+    margin: 0 0% 0 1.2%;
+    gap: 10px;
+    padding: 5% 3% 5% 5%;
+    max-height: 90px;
+  }
+
+  .input {
+    width: 65%;
+  }
+  .inputContainer {
+    gap: 5px;
+    text-align: center;
+    width: 100%;
+  }
 }

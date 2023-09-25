@@ -1,0 +1,20 @@
+.section {
+  padding: 5%;
+  text-align: center;
+  color: white;
+  gap: 10px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../../assets/bg-boost-desktop.svg");
+}
+.text{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    padding: 10%;
+  }
+
+  
+}
+

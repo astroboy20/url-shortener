@@ -1,0 +1,48 @@
+.section {
+  background-color: hsl(260, 8%, 14%);
+  display: flex;
+  color: hsl(0, 0%, 75%);
+  padding: 4%;
+  justify-content: space-between;
+}
+
+.features,
+.resources,
+.company {
+  display: flex;
+  flex-direction: column;
+}
+.section-h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.section-p {
+  font-size: 12px;
+  padding: 5%;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+.image {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10% 4%;
+  }
+
+  .section-p {
+    padding: 2%;
+  }
+  .icons {
+    justify-content: center;
+  }
+}
